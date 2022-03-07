@@ -1,0 +1,82 @@
+html,body{
+  background-color: #000;
+  font-family: monospace;
+  color: green;
+  font-size: 16px;
+}
+
+#navbar{
+  position: fixed;  
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 20%;
+  border-right: 2px solid #333;
+  background: #000;
+  box-sizing: border-box;
+}
+
+#main-doc {
+  position: absolute;
+  left: 20%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+#navbar header{
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#navbar a.nav-link{
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  font-size: 16px;
+  fon-weight: bold;
+  text-decoration: none;
+  color: #666;
+  box-sizing: border-box;
+}
+
+#navbar a.nav-link:hover{
+  background-color: #CCC;
+  color: #000;
+}
+
+#navbar a.nav-link:before{
+  content: '>_';
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+#main-doc header{
+  font-size: 30px;
+  margin: 20px 0px;
+  font-weight: bold;
+  border-bottom: 3px solid green;
+}
+
+#main-doc code{
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  color: #FFF;
+  box-sizing: border-box;
+}
+
+@media (max-width:600px){
+  #navbar{
+    width: 40%;
+  }
+  #main-doc{
+    left: 40%;
+  }
+}
